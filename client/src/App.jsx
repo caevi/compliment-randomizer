@@ -26,7 +26,7 @@ export default function App() {
     <div className="app-bg min-h-screen px-4 py-8 sm:py-12 flex items-center justify-center">
       <div className="w-full max-w-xl text-center">
         <p className="text-white/70 text-sm sm:text-base mb-2 tracking-wide">
-          just a little thing i made for you
+          just a little thing i made for you ❤️ 
         </p>
 
         <h1 className="text-white font-semibold text-3xl sm:text-4xl mb-7">
@@ -68,7 +68,7 @@ export default function App() {
         </div>
 
         <p className="text-white/45 text-xs mt-8 sm:mt-10">
-          i miss you❤️ 
+          i miss you... keep pressing theres a hidden message! 
         </p>
       </div>
     </div>

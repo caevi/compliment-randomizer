@@ -50,7 +50,7 @@ const compliments = [
   "You just get it",
   "I love how dumb your humor is like 67 bruh",
   "You make things feel natural",
-  "Hi baby, you found the hidden paragraph. I just wanna say you are my favourite person in my life right now. I am honestly so grateful that I met you. I have the purest intentions, and I just want to treat you right for real. You deserve good things to come into your life, and I hope you achieve all your goals! I miss you so much and I hope I can see you soon. Stay safe and have a good shift - carlo "
+  "Hi baby, you found the hidden paragraph. I just wanna say you are my favourite person in my life right now. I am honestly so grateful that I met you and I thank God everyday for bringing you into my life. I have the purest intentions, and I just want to show you how to be treated right for real.  You deserve good things to come into your life, and I hope you achieve all your dreams and goals! I love sooooo many things about you, you are literally the best HAHA. I miss you so much and I hope I can see you soon. Stay safe and have a good shift - carlo aka your man aka your ball"
 ];
 
 let pool = [...compliments];
