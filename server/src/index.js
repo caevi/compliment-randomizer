@@ -5,7 +5,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://compliment-client.onrender.com/"
+  "https://compliment-client.onrender.com"
 ];
 
 app.use(cors({
