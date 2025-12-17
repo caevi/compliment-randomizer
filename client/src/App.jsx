@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:4000";
+
 
 export default function App() {
   const [text, setText] = useState("");
