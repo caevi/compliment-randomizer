@@ -1,0 +1,71 @@
+import express from "express";
+import cors from "cors";
+
+const app = express();
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://YOUR-FRONTEND-SITE.onrender.com"
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ["GET"],
+}));
+
+app.use(express.json());
+
+const compliments = [
+  "I love your smile",
+  "I love how you make conversations feel so easy",
+  "I love how time moves so fast around you.",
+  "I love how family oriented you are ",
+  "I love how funny you are",
+  "I love how fun you can be",
+  "I love your pretty eyes",
+  "I love your relationship with God",
+  "I love how we can talk about anything",
+  "I love how comfortable I am around you and how safe you make me feel",
+  "I love how hard working you are",
+  "I love how caring you can be",
+  "I love how your independant and work for yourself",
+  "I love the gifts you give, and how sweet you can be",
+  "I love spending time with you and just you",
+  "I love how your mine <3",
+  "I love being a big back with you",
+  "I love how your not afraid to experience new things",
+  "I love how you can fit in with me and my friends",
+  "I love how you can fit into my future",
+  "Being around you just feels right",
+  "You have one of those laughs that sticks, I love it",
+  "You’re lowkey my favorite notification",
+  "You make the room feel lighter",
+  "Your sooooo pretty, like thats my ball????",
+  "I love the way you see things",
+  "You’re lowkey unforgettable",
+  "You make people smile without trying",
+  "You’ve got a really comforting presence",
+  "You make ordinary days better",
+  "You’re dangerously easy to like",
+  "You just get it",
+  "I love how dumb your humor is like 67 bruh",
+  "You make things feel natural"
+];
+
+let pool = [...compliments];
+function drawOne() {
+  if (pool.length === 0) pool = [...compliments];
+  const idx = Math.floor(Math.random() * pool.length);
+  const picked = pool[idx];
+  pool.splice(idx, 1);
+  return picked;
+}
+
+app.get("/api/compliment", (req, res) => {
+  res.json({ text: drawOne() });
+});
+
+app.get("/api/health", (req, res) => res.json({ ok: true }));
+
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`API running on port ${PORT}`));

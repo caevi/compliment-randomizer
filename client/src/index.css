@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+/* Background */
+.app-bg {
+  background: radial-gradient(circle at 25% 20%, rgba(168, 85, 247, 0.25), transparent 45%),
+              radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.18), transparent 45%),
+              radial-gradient(circle at 50% 95%, rgba(236, 72, 153, 0.14), transparent 45%),
+              linear-gradient(135deg, #050505, #000000 40%, #070707);
+}
+
+/* Glass card */
+.glass-card {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+/* Mobile-friendly tap button */
+.tap-btn {
+  box-shadow: 0 18px 50px rgba(0,0,0,0.40);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Slight “press” feel */
+.tap-btn:active {
+  transform: translateY(1px);
+}
