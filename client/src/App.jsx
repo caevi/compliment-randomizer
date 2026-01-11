@@ -9,7 +9,7 @@ const UNLOCK_AT = 15;
 const LETTER = `
 have u ever looked at someone and just admired them?
 looked at someone with the most pure intentions?
-looked at someone and just knew — yeah, it’s them?
+looked at someone and just knew yeah they are the one?
 
 lately… i have.
 
