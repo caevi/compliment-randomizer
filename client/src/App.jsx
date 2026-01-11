@@ -13,7 +13,7 @@ looked at someone and just knew — yeah, it’s them?
 
 lately… i have.
 
-when i look at you, it’s not just a crush.
+when i look at you Lor, it’s not just a crush.
 these feelings are strong in a way i’ve never felt before.
 i crave your presence.
 i picture a future and actually want it to happen.
@@ -130,7 +130,7 @@ export default function App() {
 
         {!unlocked && (
           <p className="text-white/45 text-xs mt-8">
-            keep pressing… there’s something waiting for you
+            put the words together! keep pressing… there’s something waiting for you
           </p>
         )}
       </div>
