@@ -36,7 +36,7 @@ export default async function LettersPage() {
         <div>
           <h1 className="rom-title">My Letters 2 You</h1>
           <p className="rom-sub">
-            One day at a time baby🤍
+            One day at a time 
           </p>
         </div>
         <div className="rom-pill">💌</div>
