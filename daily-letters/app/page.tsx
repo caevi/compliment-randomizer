@@ -16,7 +16,7 @@ export default function HomePage() {
       <section className="rom-card">
         <div className="rom-card-inner" style={{ padding: 22 }}>
           <p className="rom-sub" style={{ marginTop: 0 }}>
-            If you’re here, it means I still care even if we are not talking right now. I want you to remember that I'm serious about waiting for you. I dont mean that to pressure you or overwhelm you in anyway. But I will be here. I love you Lor, I always will. Happy Valentine's Day by the way. 
+            If you’re here, it means I still care even if we are not talking right now. I want you to remember that I'm serious about waiting for you. I dont mean that to pressure you or overwhelm you in anyway. But I will be here. I love you Lor, I always will. Stay locked in. I am proud of you always. 
           </p>
 
           <a
