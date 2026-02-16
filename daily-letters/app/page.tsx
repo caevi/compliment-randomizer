@@ -7,7 +7,7 @@ export default function HomePage() {
         <div>
           <h1 className="rom-title">Hi Loraine</h1>
           <p className="rom-sub">
-            You clicked on your website.. 
+            You clicked on the website... This is where I will put my journal entries daily. I will constantly be updating this website so keep checking in my love. 
           </p>
         </div>
         <div className="rom-pill">🤍</div>
