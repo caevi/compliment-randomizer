@@ -66,6 +66,12 @@ export default function AdminPage() {
       {msg && <p style={{ marginTop: 14 }}>{msg}</p>}
 
       <hr style={{ margin: "24px 0" }} />
+      
+<p style={{ marginTop: 10 }}>
+  <a href="/admin/views" style={{ textDecoration: "underline" }}>
+    View opens / analytics →
+  </a>
+</p>
 
       <p>
         View her page:{" "}

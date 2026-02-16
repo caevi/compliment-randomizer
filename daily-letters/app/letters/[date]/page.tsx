@@ -1,7 +1,7 @@
 import { headers } from "next/headers";
+import TrackView from "./TrackView";
 
 export const dynamic = "force-dynamic";
-
 
 async function getBaseUrl() {
   const envUrl = process.env.NEXT_PUBLIC_SITE_URL;
@@ -12,7 +12,10 @@ async function getBaseUrl() {
   const proto = h.get("x-forwarded-proto") ?? "http";
   return `${proto}://${host}`;
 }
-export default async function LetterPage(props: { params: Promise<{ date: string }> }) {
+
+export default async function LetterPage(props: {
+  params: Promise<{ date: string }>;
+}) {
   const { date } = await props.params;
 
   const baseUrl = await getBaseUrl();
@@ -37,7 +40,9 @@ export default async function LetterPage(props: { params: Promise<{ date: string
             <p className="rom-sub" style={{ maxWidth: 420 }}>
               Not yet. Come back on <b>{date}</b>.
             </p>
-            <a className="rom-btn" href="/letters">← back</a>
+            <a className="rom-btn" href="/letters">
+              ← back
+            </a>
           </div>
         </section>
       </main>
@@ -60,17 +65,22 @@ export default async function LetterPage(props: { params: Promise<{ date: string
             <p className="rom-sub" style={{ margin: 0 }}>
               If you expected it to be here, it might not be created yet.
             </p>
-            <a className="rom-btn" href="/letters">← back</a>
+            <a className="rom-btn" href="/letters">
+              ← back
+            </a>
           </div>
         </section>
       </main>
     );
   }
 
-  const data = await res.json();
+  const data = (await res.json()) as { date: string; content: string };
 
   return (
     <main className="rom-wrap rom-fade">
+      {/* ✅ Track only when letter successfully loads */}
+      <TrackView letterDate={data.date} />
+
       <div className="rom-header">
         <div>
           <h1 className="rom-title">{data.date}</h1>
@@ -82,7 +92,9 @@ export default async function LetterPage(props: { params: Promise<{ date: string
       <section className="rom-card">
         <div className="rom-card-inner">
           <div className="rom-letter">{data.content}</div>
-          <a className="rom-btn" href="/letters">← back</a>
+          <a className="rom-btn" href="/letters">
+            ← back
+          </a>
         </div>
       </section>
     </main>
